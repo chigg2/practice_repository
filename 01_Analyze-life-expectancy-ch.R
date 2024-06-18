@@ -36,3 +36,9 @@ ggplot(data = le_data %>% filter(state == "California", race == "black", sex == 
 ggsave(plot = last_plot(), filename = "./images/ca-black-women-LE.png",
        width = 5, height = 5,device = "png"
         )
+
+# just adding a code here 
+
+mod2 <- lm(LE ~ year, dat = le_data %>% filter(state == "Alabama", race == "black", sex == "Female"))
+
+
